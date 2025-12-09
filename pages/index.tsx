@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Head from "next/head";
 import Layout from "../components/Layout";
 import styles from "./HomePage.module.css";
 
@@ -46,6 +47,31 @@ export default function Home() {
 
   return (
     <Layout>
+      <Head>
+        <title>Snekbooru - The Ultimate Anime & Manga Browser</title>
+        <meta
+          name="description"
+          content="Download Snekbooru, the ultimate desktop application for browsing anime and manga from multiple sources. Features advanced search, AI chat, a manga reader, bulk downloads, and more. Free for Windows."
+        />
+        <meta
+          name="keywords"
+          content="Snekbooru, anime browser, manga reader, booru, image browser, bulk download, hentai, AI chat, desktop app, pathetic.dev"
+        />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.snekbooru.org/" />
+        <meta property="og:title" content="Snekbooru - The Ultimate Anime & Manga Browser" />
+        <meta property="og:description" content="The ultimate desktop app for browsing anime, manga, and booru sites with powerful features." />
+        <meta property="og:image" content="/S.png" />
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.snekbooru.org/" />
+        <meta property="twitter:title" content="Snekbooru - The Ultimate Anime & Manga Browser" />
+        <meta property="twitter:description" content="The ultimate desktop app for browsing anime, manga, and booru sites with powerful features." />
+        <meta property="twitter:image" content="/S.png" />
+        {/* Add your domain name for the canonical link */}
+        <link rel="canonical" href="https://www.snekbooru.org/" />
+      </Head>
       {/* The max-w-7xl and mx-auto classes constrain the content width and center it */}
       <div className={`${styles.wrapper} max-w-7xl mx-auto`}>
         <header className={styles.header}>

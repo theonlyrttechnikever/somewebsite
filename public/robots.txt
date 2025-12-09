@@ -1,0 +1,5 @@
+# Tell all search engine crawlers that they can crawl the entire site.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.snekbooru.org/sitemap.xml
