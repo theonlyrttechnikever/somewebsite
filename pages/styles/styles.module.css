@@ -1,0 +1,220 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.galleryContainer {
+  animation: fadeInUp 0.8s ease-out;
+  background: #0a0a0a;
+  padding: 3em 2em;
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  animation: slideInLeft 0.6s ease-out;
+  color: #a855f7;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  animation: slideInLeft 0.8s ease-out 0.1s both;
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2em;
+  margin-bottom: 3em;
+}
+
+.styleCard {
+  animation: fadeInUp 0.8s ease-out;
+  animation-fill-mode: backwards;
+  background: #1a1a1a;
+  border: 3px solid #3b82f6;
+  padding: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 4px 4px 0px rgba(59, 130, 246, 0.15);
+}
+
+.styleCard:nth-child(1) { animation-delay: 0.2s; }
+.styleCard:nth-child(2) { animation-delay: 0.3s; }
+.styleCard:nth-child(3) { animation-delay: 0.4s; }
+.styleCard:nth-child(4) { animation-delay: 0.5s; }
+.styleCard:nth-child(5) { animation-delay: 0.6s; }
+.styleCard:nth-child(6) { animation-delay: 0.7s; }
+.styleCard:nth-child(7) { animation-delay: 0.8s; }
+.styleCard:nth-child(8) { animation-delay: 0.9s; }
+.styleCard:nth-child(9) { animation-delay: 1s; }
+
+.styleCard:hover {
+  transform: translateY(-8px);
+  border-color: #06b6d4;
+  box-shadow: 8px 8px 0px rgba(6, 182, 212, 0.25);
+}
+
+.colorPreview {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 1em;
+  border: 2px solid #06b6d4;
+  transition: transform 0.3s ease-out;
+}
+
+.styleCard:hover .colorPreview {
+  transform: scale(1.05);
+}
+
+.styleCard h3 {
+  color: #a855f7;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+
+.author {
+  color: #06b6d4;
+  font-size: 0.9rem;
+  margin: 0.3em 0;
+}
+
+.description {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.modal {
+  animation: fadeInUp 0.3s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1em;
+}
+
+.modalContent {
+  background: #1a1a1a;
+  border: 4px solid #a855f7;
+  padding: 2em;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 10px 10px 0px rgba(168, 85, 247, 0.3);
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.closeBtn {
+  float: right;
+  font-size: 1.5em;
+  color: #a855f7;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 0.2s ease-out;
+}
+
+.closeBtn:hover {
+  color: #06b6d4;
+  transform: scale(1.2);
+}
+
+.modalHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: start;
+}
+
+.largePreview {
+  width: 100%;
+  height: 200px;
+  border: 3px solid #06b6d4;
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+
+.modalInfo {
+  animation: fadeInUp 0.5s ease-out 0.2s both;
+}
+
+.modalInfo h2 {
+  color: #a855f7;
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.modalAuthor,
+.modalDesc,
+.created,
+.compatible {
+  color: #cbd5e1;
+  margin: 0.8em 0;
+  line-height: 1.6;
+}
+
+.downloadBtn {
+  display: inline-block;
+  background: #a855f7;
+  color: #0a0a0a;
+  padding: 0.8em 1.5em;
+  border: 2px solid #0a0a0a;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  margin-top: 1.5em;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.downloadBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .modalHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .styleCard {
+    padding: 1em;
+  }
+}

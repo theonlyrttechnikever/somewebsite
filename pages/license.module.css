@@ -1,0 +1,72 @@
+.licenseContainer {
+  color: #e4e6eb;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #a855f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.licenseContent {
+  background: #1a1a1a;
+  border: 3px solid #3b82f6;
+  padding: 2em;
+  margin-bottom: 2rem;
+  box-shadow: 6px 6px 0px rgba(59, 130, 246, 0.15);
+}
+
+.licenseContent h2 {
+  color: #3b82f6;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: 'IBM Plex Mono', monospace;
+  padding-bottom: 0.8em;
+  border-bottom: 2px dashed #3b82f6;
+}
+
+.licenseContent p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.licenseList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+.licenseList li {
+  background: #0a0a0a;
+  border-left: 4px solid #06b6d4;
+  padding: 1em;
+  margin-bottom: 0.8em;
+  color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .licenseContent {
+    padding: 1.2em;
+  }
+}

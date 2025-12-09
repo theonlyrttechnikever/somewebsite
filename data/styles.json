@@ -1,0 +1,84 @@
+{
+  "styles": [
+    {
+      "id": "official-purple",
+      "name": "Official Purple",
+      "author": "atroubledsnake",
+      "description": "The official purple theme for Snekbooru",
+      "preview_color": "#a855f7",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/purple_official.snek.css",
+      "created_date": "2025-09-14"
+    },
+    {
+      "id": "official-red",
+      "name": "Official Red",
+      "author": "atroubledsnake",
+      "description": "The official red theme for Snekbooru",
+      "preview_color": "#ef4444",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/red_official.snek.css",
+      "created_date": "2025-09-20"
+    },
+    {
+      "id": "official-cyan",
+      "name": "Official Cyan",
+      "author": "atroubledsnake",
+      "description": "The official cyan theme for Snekbooru",
+      "preview_color": "#06b6d4",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/cyan_official.snek.css",
+      "created_date": "2025-09-20"
+    },
+    {
+      "id": "official-green",
+      "name": "Official Green",
+      "author": "atroubledsnake",
+      "description": "The official green theme for Snekbooru",
+      "preview_color": "#22c55e",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/green_official.snek.css",
+      "created_date": "2025-09-20"
+    },
+    {
+      "id": "official-blue",
+      "name": "Official Blue",
+      "author": "atroubledsnake",
+      "description": "The official blue theme for Snekbooru",
+      "preview_color": "#3b82f6",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/blue_official.snek.css",
+      "created_date": "2025-09-24"
+    },
+    {
+      "id": "official-gold",
+      "name": "Official Gold",
+      "author": "atroubledsnake",
+      "description": "The official gold theme for Snekbooru",
+      "preview_color": "#f59e0b",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/gold_official.snek.css",
+      "created_date": "2025-09-25"
+    },
+    {
+      "id": "official-magenta",
+      "name": "Official Magenta",
+      "author": "atroubledsnake",
+      "description": "The official magenta theme for Snekbooru",
+      "preview_color": "#d946ef",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/magenta_official.snek.css",
+      "created_date": "2025-09-25"
+    },
+    {
+      "id": "official-silver",
+      "name": "Official Silver",
+      "author": "atroubledsnake",
+      "description": "The official silver theme for Snekbooru",
+      "preview_color": "#9ca3af",
+      "compatible_versions": ["5.0.0", "5.0.2", "5.0.3", "5.0.5"],
+      "download_url": "/styles/silver_official.snek.css",
+      "created_date": "2025-09-25"
+    }
+  ]
+}

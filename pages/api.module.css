@@ -1,0 +1,122 @@
+.apiContainer {
+  color: #e4e6eb;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #a855f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.apiSection {
+  background: #1a1a1a;
+  border: 3px solid #3b82f6;
+  padding: 2em;
+  margin-bottom: 2rem;
+  box-shadow: 6px 6px 0px rgba(59, 130, 246, 0.15);
+}
+
+.apiSection h2 {
+  color: #3b82f6;
+  font-size: 1.4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.endpoint {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 1.5em;
+  background: #0a0a0a;
+  padding: 1em;
+  border-left: 4px solid #06b6d4;
+}
+
+.method {
+  background: #a855f7;
+  color: #0a0a0a;
+  padding: 0.5em 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-family: 'IBM Plex Mono', monospace;
+  border-radius: 0;
+}
+
+.path {
+  color: #06b6d4;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.apiSection p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+.codeBlock {
+  background: #0a0a0a;
+  border: 2px solid #3b82f6;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #06b6d4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.apiNote {
+  background: #1a1a1a;
+  border: 3px solid #f59e0b;
+  padding: 2em;
+  margin-bottom: 2rem;
+  box-shadow: 6px 6px 0px rgba(245, 158, 11, 0.15);
+}
+
+.apiNote h2 {
+  color: #f59e0b;
+  font-size: 1.4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.apiNote ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.apiNote li {
+  background: #0a0a0a;
+  border-left: 4px solid #f59e0b;
+  padding: 1em;
+  margin-bottom: 0.8em;
+  color: #cbd5e1;
+}

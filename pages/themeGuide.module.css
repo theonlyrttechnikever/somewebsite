@@ -1,0 +1,263 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+  /* Set initial state for when JS is disabled or for server-side rendering */
+  opacity: 0;
+}
+
+.guideContainer {
+  color: #e4e6eb;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  color: #a855f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.section {
+  background: #1a1a1a;
+  border: 2px solid #06b6d4;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  box-shadow: 4px 4px 0px rgba(6, 182, 212, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 0px rgba(6, 182, 212, 0.3);
+}
+
+.section h2 {
+  color: #06b6d4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px dashed #a855f7;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.section p {
+  color: #cbd5e1;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.section code {
+  background: #0a0a0a;
+  color: #06b6d4;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+}
+
+.codeBlock {
+  background: #0a0a0a;
+  border: 2px solid #06b6d4;
+  border-left: 4px solid #a855f7;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  color: #06b6d4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.codeBlock .keyword {
+  color: #f706cf;
+  font-weight: 600;
+}
+
+.codeBlock .selector {
+  color: #06b6d4;
+  font-weight: 600;
+}
+
+.codeBlock .property {
+  color: #a855f7;
+}
+
+.codeBlock .value {
+  color: #2de2e6;
+}
+
+.codeBlock .comment {
+  color: #64748b;
+  font-style: italic;
+}
+
+.widgetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.widgetGrid div {
+  background: #2a2a2a;
+  border: 1px solid #06b6d4;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.widgetGrid div:hover {
+  transform: scale(1.03);
+  background-color: #3a3a3a;
+}
+
+.widgetGrid b {
+  color: #06b6d4;
+  font-family: 'IBM Plex Mono', monospace;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.widgetGrid p {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.pseudoList {
+  background: #2a2a2a;
+  border: 1px solid #06b6d4;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.pseudoList div {
+  color: #cbd5e1;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  padding-left: 1rem;
+  border-left: 3px solid #a855f7;
+}
+
+.pseudoList code {
+  color: #2de2e6;
+  font-weight: 600;
+}
+
+.idGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.idGrid div {
+  background: #2a2a2a;
+  border: 1px solid #a855f7;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.idGrid div:hover {
+  transform: translateY(-4px);
+  border-color: #c084fc;
+}
+
+.idGrid code {
+  color: #2de2e6;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+.idGrid p {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.sectionHeader {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  transition: transform 0.3s ease;
+  color: #a855f7;
+}
+
+@media (max-width: 768px) {
+  .guideContainer {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 1.2rem;
+  }
+
+  .codeBlock {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  .widgetGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .idGrid {
+    grid-template-columns: 1fr;
+  }
+}

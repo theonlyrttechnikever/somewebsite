@@ -1,0 +1,362 @@
+* {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* ===== Base Widget & Window ===== */
+sWidget {
+    background-color: #1a0a0a;
+    color: #ffd8d8;
+    border: none;
+    padding: 5px;
+}
+
+sWidget#main_window {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0f0505, stop:1 #1a0a0a
+    );
+}
+
+/* ===== Buttons ===== */
+sPushButton {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #a31919, stop:1 #d62828
+    );
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 10px 18px;
+    border: 1px solid #ff4d4d;
+    font-weight: bold;
+}
+
+sPushButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #c22222, stop:1 #ff3b3b
+    );
+    border-color: #ff8080;
+}
+
+sPushButton:pressed {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #7a1212, stop:1 #a81c1c
+    );
+    border-color: #ff6666;
+}
+
+sPushButton:disabled {
+    background: #2a1414;
+    color: #805050;
+    border-color: #3d1f1f;
+}
+
+/* ===== Inputs ===== */
+sLineEdit, sPlainTextEdit, sComboBox, sSpinBox {
+    background: #241111;
+    color: #ffd8d8;
+    border: 1px solid #a81c1c;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+sLineEdit:focus, sPlainTextEdit:focus, sComboBox:focus, sSpinBox:focus {
+    border-color: #ff3b3b;
+    background: #2d1515;
+}
+
+/* ===== Tabs ===== */
+sTabWidget::tab-bar {
+    alignment: center;
+}
+
+sTabBar::tab {
+    background: #241111;
+    color: #ff9999;
+    padding: 12px 26px;
+    margin: 2px;
+    min-width: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #3d1f1f;
+    text-align: center;
+}
+
+sTabBar::tab:selected {
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #d62828, stop:1 #7a1212
+    );
+    color: #ffffff;
+    border-color: #ff4d4d;
+    font-weight: bold;
+}
+
+sTabBar::tab:hover:!selected {
+    background: #3d1f1f;
+    color: #ffcccc;
+}
+
+sTabWidget::pane {
+    border: 1px solid #3d1f1f;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background: #1a0d0d;
+}
+
+/* ===== Group Boxes ===== */
+sGroupBox {
+    border: 1px solid #a81c1c;
+    border-radius: 10px;
+    margin-top: 12px;
+    background: rgba(168, 28, 28, 0.15);
+}
+
+sGroupBox::title {
+    color: #ff3b3b;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+/* ===== Table Headers ===== */
+sHeaderView {
+    background: #241111;
+    color: #ffcccc;
+    border: none;
+}
+
+sHeaderView::section {
+    background: #3d1f1f;
+    color: #ffd8d8;
+    padding: 6px 14px;
+    border: 1px solid #4a2424;
+    font-weight: bold;
+}
+
+/* ===== Tables & Lists ===== */
+sTableView, sListWidget {
+    background: #1a0d0d;
+    alternate-background-color: #241111;
+    border: 1px solid #3d1f1f;
+    border-radius: 6px;
+    gridline-color: #3d1f1f;
+}
+
+sTableView::item:selected, sListWidget::item:selected {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #d62828, stop:1 #7a1212
+    );
+    color: #ffffff;
+}
+
+sTableView::item:hover:!selected, sListWidget::item:hover:!selected {
+    background: #3d1f1f;
+}
+
+/* ===== Scrollbars ===== */
+sScrollBar:vertical, sScrollBar:horizontal {
+    background: #1a0d0d;
+    border-radius: 6px;
+}
+
+sScrollBar:vertical { width: 16px; }
+sScrollBar:horizontal { height: 16px; }
+
+sScrollBar::handle:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #a31919, stop:1 #d62828);
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+sScrollBar::handle:vertical:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #c22222, stop:1 #ff3b3b);
+}
+
+sScrollBar::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #a31919, stop:1 #d62828);
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+sScrollBar::handle:horizontal:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #c22222, stop:1 #ff3b3b);
+}
+
+/* ===== Progress Bars ===== */
+sProgressBar {
+    border: 1px solid #3d1f1f;
+    border-radius: 8px;
+    background: #241111;
+    text-align: center;
+}
+
+sProgressBar::chunk {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #a31919, stop:1 #ff4d4d
+    );
+    border-radius: 6px;
+}
+
+/* ===== Checkboxes ===== */
+sCheckBox {
+    color: #ffd8d8;
+}
+
+sCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #a81c1c;
+    background: #241111;
+}
+
+sCheckBox::indicator:checked {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #a31919, stop:1 #d62828
+    );
+    border-color: #ff3b3b;
+}
+
+sCheckBox::indicator:hover {
+    border-color: #ff3b3b;
+}
+
+/* ===== Sliders ===== */
+sSlider::groove:horizontal {
+    height: 6px;
+    background: #3d1f1f;
+    border-radius: 3px;
+}
+
+sSlider::handle:horizontal {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #a31919, stop:1 #d62828
+    );
+    border: 1px solid #ff4d4d;
+    width: 18px;
+    margin: -6px 0;
+    border-radius: 9px;
+}
+
+sSlider::handle:horizontal:hover {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #c22222, stop:1 #ff3b3b
+    );
+}
+
+sSlider::sub-page:horizontal {
+    background: #d62828;
+    border-radius: 3px;
+}
+
+/* ===== Labels ===== */
+sLabel#title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ff3b3b;
+    text-align: center;
+    qproperty-alignment: AlignCenter;
+}
+
+sLabel#total_posts_label {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d62828;
+    background: rgba(168, 28, 28, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* ===== Video Frame ===== */
+sFrame#video_frame {
+    background: #000000;
+    border: 2px solid #a81c1c;
+    border-radius: 10px;
+}
+
+/* ===== Text Areas ===== */
+sTextBrowser,
+sPlainTextEdit#post_inspector_info,
+sPlainTextEdit#favorites_inspector_info {
+    background: #241111;
+    color: #ffd8d8;
+    border: 1px solid #3d1f1f;
+    border-radius: 8px;
+}
+
+sTextBrowser#ai_chat_history_browser {
+    background: #1a0d0d;
+    border: 1px solid #a81c1c;
+}
+
+sPlainTextEdit#ai_chat_input_area {
+    background: #2d1515;
+    border: 1px solid #ff3b3b;
+}
+
+/* ===== Danger Zone ===== */
+sGroupBox#danger_zone {
+    border: 2px solid #ff0000;
+    background: rgba(64, 0, 0, 0.3);
+}
+
+sPushButton#reset_button {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #800, stop:1 #c33
+    );
+    color: #fcc;
+    border: 1px solid #f66;
+}
+
+sPushButton#reset_button:hover {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #a00, stop:1 #e44
+    );
+}
+
+/* ===== Custom Classes ===== */
+.card {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #241111, stop:1 #1a0d0d
+    );
+    border: 1px solid #a81c1c;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(214, 40, 40, 0.3);
+}
+
+.card:hover {
+    border-color: #ff3b3b;
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 #3d1f1f, stop:1 #241111
+    );
+}
+
+.futuristic-panel {
+    background: rgba(168, 28, 28, 0.15);
+    border: 1px solid #a81c1c;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.futuristic-panel::title {
+    color: #ff3b3b;
+    font-weight: bold;
+}
