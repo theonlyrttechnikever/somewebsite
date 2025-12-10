@@ -29,7 +29,7 @@ export default function Home() {
     },
     {
       q: "WHAT VIDEO FORMATS ARE SUPPORTED?",
-      a: "If you got VLC Media Player 64-bit, thenjust about any video format will work. Otherwise, uhh, good luck."
+      a: "If you got VLC Media Player 64-bit, then just about any video format will work. Otherwise, uhh, good luck."
     },
     {
       q: "IS SNEKBOORU FREE TO USE?",
@@ -55,7 +55,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Snekbooru, anime browser, manga reader, booru, image browser, bulk download, hentai, AI chat, desktop app, pathetic.dev"
+          content="Snekbooru, anime browser, manga reader, booru, image browser, bulk download, hentai, AI chat, desktop app"
         />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
@@ -70,6 +70,8 @@ export default function Home() {
         <meta property="twitter:description" content="The ultimate desktop app for browsing anime, manga, and booru sites with powerful features." />
         <meta property="twitter:image" content="/S.png" />
         {/* Add your domain name for the canonical link */}
+        {/* Add viewport for responsive design */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://www.snekbooru.org/" />
       </Head>
       {/* The max-w-7xl and mx-auto classes constrain the content width and center it */}
@@ -89,8 +91,8 @@ export default function Home() {
           <div>
             <a
               className={styles.downloadBtn}
-              href="https://github.com/atroubledsnake/Snekbooru/releases/download/v5.0.8/WIN_Snekbooru_Installer_x64.exe"
-              download
+              href="#downloads"
+              onClick={() => window.scrollTo({ top: (document.querySelector("#download") as HTMLElement).offsetTop || 0, behavior: "smooth" })}
             >
               DOWNLOAD NOW
             </a>
@@ -121,7 +123,7 @@ export default function Home() {
                   Snekbooru combines advanced search, AI chat, manga reader, and bulk downloads in one sleek application. Browse anime and manga from 8+ sources simultaneously with zero latency.
                 </p>
                 <div className={styles.heroCta}>
-                  <a href="#download" style={{ background: "#3b82f6", color: "white" }}>DOWNLOAD</a>
+                  <a href="#download" style={{ background: "#3b82f6", color: "white" }}>DOWNLOAD NOW</a>
                   <a href="#features" style={{ background: "#3b82f6", color: "white"}}>LEARN MORE</a>
                 </div>
               </div>
@@ -190,7 +192,7 @@ export default function Home() {
             </p>
             <a
               className={styles.downloadBtn}
-              href="https://github.com/atroubledsnake/Snekbooru/releases/download/v5.0.8/WIN_Snekbooru_Installer_x64.exe"
+              href="https://github.com/atroubledsnake/Snekbooru/releases/download/v5.0.8-fix/WIN_Snekbooru_Installer_x64.exe"
               download
             >
               WIN_SNEKBOORU_INSTALLER_X64.EXE
@@ -235,8 +237,8 @@ export default function Home() {
             </a>
             <p className={styles.sectionP} style={{ marginTop: "2em", fontSize: "0.95em" }}>
               <b>CREATOR:</b> atroubledsnake<br />
-              <b>CONTRIBUTORS:</b> pathetic.dev, 69st, 572.lambman (nikolai.lol)<br />
-              <b>PORTFOLIO:</b> <a className={styles.sectionA} href="https://pathetic.dev" target="_blank" rel="noopener noreferrer">pathetic.dev</a>
+              <b>CONTRIBUTORS:</b>69st, s4d_god<br />
+              <b>PORTFOLIO:</b> <a className={styles.sectionA} href="https://snekbooru.org/atroubledsnake" target="_blank" rel="noopener noreferrer">ATroubledSnake</a>
             </p>
           </section>
 
@@ -265,6 +267,10 @@ export default function Home() {
           <section className={styles.section}>
             <h2 className={styles.sectionH2}>VERSION HISTORY</h2>
             <div className={styles.changelog}>
+              <h3 className={styles.changelogH3}>Release Version 5.0.8 Patch</h3> 
+              <ul className={styles.changelogUl}>
+                <li className={styles.changelogLi}>Fixed issue with settings crashing the app on saving (I still have no idea how I let such a big error happen and how I let it into prod)</li>
+              </ul>
               <h3 className={styles.changelogH3}>Release Version 5.0.8</h3>
               <ul className={styles.changelogUl}>
                 <li className={styles.changelogLi}><b>Video Playback Overhaul</b>: Switched to PyQt5's native QMediaPlayer, added comprehensive controls (Play/Pause, Seek, Volume, Skip).</li>

@@ -177,28 +177,7 @@ export default function ThemeGuide() {
               <div><code>sPushButton#reset_button</code><p>Reset button</p></div>
             </div>
           </section>
-
-          {/* STYLING WITH CLASSES */}
-          <section className={`${styles.section} ${styles['fade-in']}`} style={{ animationDelay: '0.9s' }}>
-            <h2>STYLING WITH CLASSES</h2>
-            <p>
-              Assign classes to widgets and style them with a dot (<code>.</code>). First set the class property on a widget in Python code, then style it:
-            </p>
-            <div className={styles.codeBlock}>
-<span className={styles.comment}>/* Style any widget with the 'card' class */</span>
-<span className={styles.selector}>.card</span> {"{"}
-    <span className={styles.property}>background-color</span>: <span className={styles.value}>#2a2a2a</span>;
-    <span className={styles.property}>border-radius</span>: <span className={styles.value}>8px</span>;
-    <span className={styles.property}>border</span>: <span className={styles.value}>1px solid #444</span>;
-{"}"}
-
-<span className={styles.comment}>/* Combine selectors */</span>
-<span className={styles.selector}>sGroupBox#my-group.card</span> {"{"}
-    <span className={styles.property}>background-color</span>: <span className={styles.value}>#3a3a3a</span>;
-{"}"}
-            </div>
-          </section>
-
+          
           {/* ADVANCED PROPERTIES */}
           <section className={`${styles.section} ${styles['fade-in']}`} style={{ animationDelay: '1.0s' }}>
             <h2>ADVANCED PROPERTIES</h2>

@@ -24,7 +24,7 @@ export default function Portfolio() {
             <h1 className={styles.name}>atroubledsnake</h1>
             <p className={styles.role}>Full-Stack Developer & Creator</p>
             <p className={styles.bio}>
-              Polish 🇵🇱 | he/him | Discord: atroubledsnake -  DMs: <strong style={{color: 'green',}}>OPEN</strong>
+              Polish 🇵🇱 | he/him | Discord: atroubledsnake -  DMs: <strong style={{color: 'red',}}>CLOSED</strong>
             </p>
             <p className={styles.bio}>I like beer ;P | Commissions unavailable</p>
             {polandTime && <p className={styles.bio}>Local Time: {polandTime}</p>}
